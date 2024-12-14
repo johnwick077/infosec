@@ -7,11 +7,11 @@ const PORT = process.env.PORT || 3030;
 app.listen(PORT, () => {
   console.log(`johnwick programmer Info Security started on port ${PORT}`);
 });
-
+//project work
 app.use(helmet.hidePoweredBy());
 app.use(helmet.frameguard({action: 'deny'}));
 app.use(helmet.xssFilter());
-
+app.use(helmet.noSniff());
 
 
 
